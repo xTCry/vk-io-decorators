@@ -1,0 +1,32 @@
+{
+  "name": "vk-io-decorators",
+  "version": "0.0.1",
+  "main": "build/src/index.js",
+  "typings": "build/types/src/index.d.ts",
+  "repository": "https://github.com/xTCry/vk-io-decorators.git",
+  "author": "Vladislav Khr <wolt6@mail.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build:clean": "rimraf build",
+    "build": "tsc --project tsconfig.prod.json",
+    "prettier:fix": "prettier --write \"**/*.{ts,md}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,md}\"",
+    "sample-01-watch": "nodemon sample/sample1-simple-controller/app.ts",
+    "sample-01": "ts-node sample/sample1-simple-controller/app.ts"
+  },
+  "dependencies": {
+    "@vk-io/hear": "^1.1.0",
+    "dotenv": "^8.2.0",
+    "glob": "^7.1.6",
+    "reflect-metadata": "^0.1.13",
+    "vk-io": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typedi": "^0.10.0",
+    "typescript": "^4.2.3"
+  }
+}
